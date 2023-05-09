@@ -21,4 +21,4 @@ jobs:
             -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} \
             -v $(pwd):/home/ \
             custodian/c7n:latest \
-            custodian run --dryrun -s /home/ --output-dir /home/ /home/CloudCustodianList.yml
+            custodian run --dryrun -s /home/ --output-dir /home/ /home/cloud-custodian.yml
