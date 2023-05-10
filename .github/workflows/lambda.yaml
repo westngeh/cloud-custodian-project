@@ -27,7 +27,7 @@ jobs:
             --runtime nodejs14.x  \
             --role arn:aws:iam::316065414151:role/lambda-role \
             --handler index.handler \
-            --code S3Bucket=my-bucket,S3Key=my-function.zip
+            --code S3Bucket=my-custodian-bucketclear,S3Key=my-function.zip
 
       - name: Invoke Lambda function
         run: |
